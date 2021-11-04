@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>苏宁RPA机器人</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./res/css/img/favicon.ico"/>
+  <link rel="stylesheet" href="staticss/index.css">
+  <link rel="stylesheet" href="staticss/main.css">
+  <link rel="stylesheet" href="staticss/animate.min.css">
+  <link rel="stylesheet" href="staticss/swiper.min.css">
+  <link rel="stylesheet" href="staticss/example.css">
+  <link rel="stylesheet" href="staticss/cmpt.css">
+  <link rel="stylesheet" href="staticss/element/index.css">
+</head>
+<body>
+<div class="header">
+  <div class="logo">
+    <img src="./res/css/img/logo.png" alt="">
+    <span>苏宁RPA机器人</span>
+  </div>
+  <!--        <div class="loginBtn">机器人平台</div>-->
+  <!-- menu -->
+  <ul class="menu-list">
+    <li class="menu-item menu-index"><a href="./index.htm">首页</a></li>
+    <li class="menu-item menu-cicada"><a href="./cicada.htm">应用市场</a></li>
+    <!--            <li class="menu-item menu-example"><a href="./example.htm">典型案例</a></li>-->
+    <!--           <li class="menu-item menu-item-cmpt">-->
+    <!--            <a class="cmpt-list-btn" href="javascript:void(0)">组件市场</a>-->
+    <!--                <div class="menu-cmpt-list">-->
+    <!--                    <div class="menu-cmpt-item to-cmpt-base" >基础组件</div>-->
+    <!--                    <div class="menu-cmpt-item to-cmpt-bus">业务组件</div>-->
+    <!--                </div>-->
+    <!--            </li>-->
+
+
+    <!--            <li class="menu-item build drill"><a href="javascript:void(0);">实战平台</a></li>-->
+    <!--            <li class="menu-item menu-item-tm">-->
+    <!--            <a class="cmpt-list-btn" href="javascript:void(0)">创新实验室</a>-->
+    <!--                <div class="menu-tm-list">-->
+    <!--                    <div class="menu-cmpt-item shwoTm" >天猫数据抓取</div>-->
+    <!--                </div>-->
+    <!--            </li>-->
+  </ul>
+  <div class="tianmao-dialog">
+    <div class="tianmao-dialog-ele">
+      <span style="font-weight: 600;">
+        请输入您的工号，然后再下载！
+      </span>
+      <input id="tianmao-input" class="tianmao-dialog-input" oninput="value=value.replace(/[^\d]/g,'')" type="text"
+             placeholder="请输入工号" value="" maxlength="8">
+      <div id="tianmao-input-err" style="color:red;font-size:12px;display:none;" class="showNone">请填写正确的工号</div>
+
+    </div>
+    <div class="tianmao-dialog-btn">
+      下载
+    </div>
+    <div class="closeDialog">
+      关闭
+    </div>
+  </div>
+</div>
+<div class="detail-containter" style="max-width:1920px;margin:0 auto;">
+  <!-- swiper -->
+  <div class="banner-swiper-index">
+    <div class="swiper-container banner-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide swiper-item">
+          <div class="banner">
+            <img
+                src="http://oss.suning.com/snrobot/cmpt_file/bBaASoTTW4FeU-UYiH2Les3Xu8LzbI5tGT7YrMUkN7coLZJRahAX6tg7i6-j28qx.gif"
+                alt=""/>
+            <div class="banner-text">
+              <div class="title">
+                <img src="staticmg/index/indexBannerText.png" alt="rpa"/>
+              </div>
+              <ul class="fx label-list">
+                <li class="label-item">非入侵</li>
+                <li class="label-item">高效率</li>
+                <li class="label-item">无人化</li>
+                <li class="label-item">智能化</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide swiper-item">
+          <div class="banner-box">
+            <img src="staticmg/cicada/banner-index.png" style="width:100%">
+            <div class="toCicada">了解详情</div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <!-- swiper -->
+
+  <div class="canDo">
+    <div class="canDoContent">
+      <img src="staticmg/index/can-bg1.png" alt="" class="bg1"/>
+      <img src="staticmg/index/can-bg2.png" alt="" class="bg2"/>
+      <div class="title end">SUNING RPA能做什么</div>
+      <div class="content">
+        SUNING
+        RPA是苏宁集团旗下苏宁科技集团独立知识产权的RPA产品，旨在解决业务流程自动化难题，极大地减少人为从事标准、重复、繁琐、大批量的工作任务，以最纯粹的自动化形式，快速完成人类的工作。SUNING
+        RPA以其轻量、高效、快速的特质跨出了“机器做事”的阶段，步入“替代人做”的新领域。
+      </div>
+      <ul class="fx fx-sb card-list">
+        <li class="card-item card-item1">
+          <img src="staticmg/index/card1.png" alt=""/>
+          <div class="card-tips">
+            <div class="card-tips-title" id="count1">
+              <!-- <countTo :startVal="0" :endVal="endValue1" :duration="2000"></countTo> -->
+            </div>
+            <div class="card-tips-content">人力成本节约率(%)</div>
+          </div>
+        </li>
+        <li class="card-item card-item2">
+          <img src="staticmg/index/card2.png" alt=""/>
+          <div class="card-tips">
+            <div class="card-tips-title" id="count2">
+              <!-- <countTo :startVal="0" :endVal="endValue2" :duration="2000"></countTo> -->
+            </div>
+            <div class="card-tips-content">工作提升率(%)</div>
+          </div>
+        </li>
+        <li class="card-item card-item3">
+          <img src="staticmg/index/card3.png" alt=""/>
+          <div class="card-tips">
+            <div class="card-tips-title" id="count3">
+              <!-- <countTo :startVal="0" :endVal="endValue3" :duration="2000"></countTo> -->
+            </div>
+            <div class="card-tips-content">投资回报率(%)</div>
+          </div>
+        </li>
+        <li class="card-item card-item4">
+          <img src="staticmg/index/card4.png" alt=""/>
+          <div class="card-tips">
+            <div class="card-tips-title" id="count4">
+              0
+              <!-- <countTo :startVal="30" :endVal="endValue4" :duration="2000"></countTo> -->
+            </div>
+            <div class="card-tips-content">错误率(%)</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="apply">
+    <div class="w1200">
+      <div class="apply-title end">适用的行业&场景</div>
+      <div class="apply-swiper">
+        <div class="swiper-container apply-swiper-list">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="apply-box fx">
+                <div class="left-img">
+                  <img src="staticmg/index/apply-swiper1.png" alt=""/>
+                </div>
+                <div class="right-content">
+                  <div class="content-title">财务场景</div>
+                  <div class="content-eng">PERSONNEL SCENE</div>
+                  <div class="content-desc">
+                    财务场景规划性极强，业务流程中存在大量重复繁琐，规则明确的流程任务，是RPA+AI应用最早，规模最大的场景。已推广上线增值税发票开具、税务申报、批量记账、发票验真、账标核对、三方支付平台数据记账等。
+                  </div>
+                  <div class="content-btn" onClick="toPath('/finance')">查看详情</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="apply-box fx">
+                <div class="left-img">
+                  <img src="staticmg/index/apply-swiper2.png" alt=""/>
+                </div>
+                <div class="right-content">
+                  <div class="content-title">金融场景</div>
+                  <div class="content-eng">FINANCIAL SCENARIOS</div>
+                  <div class="content-desc">
+                    金融业务线丰富，流程标准化程度高。高人力和强合规的业务流程是RPA典型应用场景。我们已在网贷审核、反洗钱案例收集、报表查询打印、人行对公账户报备核对、企业证件过期提醒及导出、抵质押代保管品入库等。
+                  </div>
+                  <div class="content-btn" onClick="toPath('/banking')">查看详情</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="apply-box fx">
+                <div class="left-img">
+                  <img src="staticmg/index/apply-swiper3.png" alt=""/>
+                </div>
+                <div class="right-content">
+                  <div class="content-title">人事场景</div>
+                  <div class="content-eng">PERSONNEL SCENE</div>
+                  <div class="content-desc">
+                    人力资源领域存在大量基于规则、重复和标准化的人力资源任务，大部分标准流程都可以实现自动化。如人员招聘、员工入职、统筹福利、薪资发放、干部任命发文、员工档案、差旅费用报销、复工承诺书撰写等。
+                  </div>
+                  <div class="content-btn" onClick="toPath('/personnel')">查看详情</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="apply-box fx">
+                <div class="left-img">
+                  <img src="staticmg/index/apply-swiper4.png" alt=""/>
+                </div>
+                <div class="right-content">
+                  <div class="content-title">供应链场景</div>
+                  <div class="content-eng">SUPPLY CHAIN SCENARIO</div>
+                  <div class="content-desc">
+                    供应链面临着业务快速增长及运营成本高的负担以及业务灵活性提高等挑战。在运营过程中，通过RPA与机器学习相结合的方式实现简单重复流程自动化，如售后安维结算开票、商品缺货监控与供应链切换、供应商订单摘取与结算等。
+                  </div>
+                  <div class="content-btn" onClick="toPath('/supplyChain')">查看详情</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="apply-box fx">
+                <div class="left-img">
+                  <img src="staticmg/index/apply-swiper5.png" alt=""/>
+                </div>
+                <div class="right-content">
+                  <div class="content-title">客服场景</div>
+                  <div class="content-eng">CUSTOMER SERVICE SCENE</div>
+                  <div class="content-desc">
+                    客服部门如何实现成本降低和服务质量提高，如何提升客服专家的经验沉淀，降低人员流失影响。在这些解决措施中很多场景都可智能化自动化实现。如退货审核、客服质检、仲裁单理赔批量处理、自动回复等。
+                  </div>
+                  <div class="content-btn" onClick="toPath('/service')">查看详情</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="apply-box fx">
+                <div class="left-img">
+                  <img src="staticmg/index/apply-swiper6.png" alt=""/>
+                </div>
+                <div class="right-content">
+                  <div class="content-title">零售场景</div>
+                  <div class="content-eng">RETAIL SCENARIOS</div>
+                  <div class="content-desc">
+                    零售业当前面临着严峻的挑战，无论实体还是电商，都需要更加精细化地优化运营流程，提升效率。在整个运营过程中，那些简单重复，耗用大量人力的流程都可RPA实现，如业绩数据收集、拼多多订单接入、商品上架等。
+                  </div>
+                  <div class="content-btn" onClick="toPath('/resale')">查看详情</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="apply-box fx">
+                <div class="left-img">
+                  <img src="staticmg/index/apply-swiper7.png" alt=""/>
+                </div>
+                <div class="right-content">
+                  <div class="content-title">数据触达</div>
+                  <div class="content-eng">DATA ACCESS</div>
+                  <div class="content-desc">
+                    数据触达通常分为报表数据准备，推送，接收以及反馈等步骤。这类标准、简单而重复流程自动化实现后将大大提升工作效率，降低人为出错率，如缺货预警通报、大区日库存通报、销售实时通报、门店大额现金预警等。
+                  </div>
+                  <div class="content-btn" onClick="toPath('/dataScene')">查看详情</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="goodness">
+    <div class="goodnessItem">
+      <div class="title end">SUNING RPA 五大优势</div>
+      <div class="content">
+        苏宁RPA在提高工作准确性的同时，还能够带来直接的盈利。使用RPA流程不仅可以转变、简化组织的工作流程，还会为公司带来极佳的可扩展性和灵活性，助力公司更加灵活地面对机遇和挑战。
+      </div>
+      <ul class="fx fx-sb tab-list">
+        <li class="fx-1 tab-item hidden">
+          <div>
+            <img src="staticmg/index/tab-1.png" alt=""/>
+            <div>准确度高</div>
+          </div>
+        </li>
+        <li class="fx-1 tab-item hidden">
+          <div>
+            <img src="staticmg/index/tab-2.png" alt=""/>
+            <div>合规性更强</div>
+          </div>
+        </li>
+        <li class="fx-1 tab-item hidden">
+          <div>
+            <img src="staticmg/index/tab-3.png" alt=""/>
+            <div>可扩展性强</div>
+          </div>
+        </li>
+        <li class="fx-1 tab-item hidden">
+          <div>
+            <img src="staticmg/index/tab-4.png" alt=""/>
+            <div>人员效率更高</div>
+          </div>
+        </li>
+        <li class="fx-1 tab-item hidden">
+          <div>
+            <img src="staticmg/index/tab-5.png" alt=""/>
+            <div>成本降低快</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <section class="pc-banner">
+    <div class="title end succession">SUNING RPA机器人系列</div>
+    <div class="desc">SUNING RPA 智能软件机器人，7*24小时不间断高效准确运行，助力客户提质、降本、增效。</div>
+    <div class="swiper-container swiperList">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-box">
+            <div class="swiper-bg  fx">
+              <div class="left-img fx-1">
+                <img class="robot" src="staticmg/index/swiper1.png" alt="">
+              </div>
+              <div class="right-content">
+                <div class="swiper-title">数据通报机器人</div>
+                <div class="swiper-desc">自动提取业务报表数据，根据模板生成图文并茂的提醒消息，然后推送给指定接收人员。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-box">
+            <div class="swiper-bg fx">
+              <div class="left-img fx-1">
+                <img class="robot" src="staticmg/index/swiper2.png" alt="">
+              </div>
+              <div class="right-content">
+                <div class="swiper-title">智能稽核机器人</div>
+                <div class="swiper-desc">通过预设的审核规则，结合票据信息、报销单信息等数据，自动完多角度的费控规定审核。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- === -->
+        <div class="swiper-slide">
+          <div class="swiper-box">
+            <div class="swiper-bg fx">
+              <div class="left-img fx-1">
+                <img class="robot" src="staticmg/index/swiper3.png" alt="">
+              </div>
+              <div class="right-content">
+                <div class="swiper-title">数据采集机器人</div>
+                <div class="swiper-desc">通过预设的数据采集规则，自动在目标系统采集数据，并检验采集数据的有效性。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-box">
+            <div class="swiper-bg fx">
+              <div class="left-img fx-1">
+                <img class="robot" src="staticmg/index/swiper4.png" alt="">
+              </div>
+              <div class="right-content">
+                <div class="swiper-title">社群客服机器人</div>
+                <div class="swiper-desc">带着耳麦，时刻为您解答社群中所有问题，自动提供群管理报表分析。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-box">
+            <div class="swiper-bg fx">
+              <div class="left-img fx-1">
+                <img class="robot" src="staticmg/index/swiper5.png" alt="">
+              </div>
+              <div class="right-content">
+                <div class="swiper-title">公文发布机器人</div>
+                <div class="swiper-desc">将发文内容同红头文件模板自动匹配，生成红头文件，然后抄送给相关领导和部门负责人。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-box">
+            <div class="swiper-bg fx">
+              <div class="left-img fx-1">
+                <img class="robot" src="staticmg/index/swiper6.png" alt="">
+              </div>
+              <div class="right-content">
+                <div class="swiper-title">智能填报机器人</div>
+                <div class="swiper-desc">基于票据识别技术，根据票据识别结果，自动完成报销单关键费用明细和报销单内容填写。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-box">
+            <div class="swiper-bg fx">
+              <div class="left-img fx-1">
+                <img class="robot" src="staticmg/index/swiper7.png" alt="">
+              </div>
+              <div class="right-content">
+                <div class="swiper-title">纳税服务机器人</div>
+                <div class="swiper-desc">双目凝神，手持金税盘全神贯注地申报各类税费，减少人为参与，提升效率、降低出错率。</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="simple">
+    <div class="title end">工作如此简单</div>
+    <div class="desc">SUNING RPA机器人</div>
+    <div class="buttons">
+      <!--                <div class="sim-btn example-btn" onClick="toRpa('http://rpacmpt.cnsuning.com/#/typicalExampleList')">查看案例</div>-->
+      <!--                <div class="sim-btn cmpt-btn" onClick="toRpa('http://rpacmpt.cnsuning.com/#/mainPage')">了解更多组件</div>-->
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="foot-top">
+    <ul class="fx fx-c">
+      <li class="foot-top-2 telphone fx-c">
+        <img src="${res}/res/css/img/tel.png" alt="">
+        025-66996699
+      </li>
+      <li class="foot-top-2 email fx-c">
+        <img src="${res}/res/css/img/email.png" alt="">
+        rpa@suning.com
+      </li>
+    </ul>
+
+  </div>
+  <div class="foot-bot">
+    Copyright@2020-2021深圳市云网万店电子商务有限公司版权所有| <a href="https://beian.miit.gov.cn" target="_blank">粤ICP备2021027996号</a>
+  </div>
+</div>
+<script src="statics/jquery.min.js"></script>
+<script src="statics/swiper.min.js"></script>
+<script src="statics/countUp.js"></script>
+<script>
+  var bannerSwiper = new Swiper('.banner-swiper', {
+    autoplay: {
+      delay: 3400,
+    },
+    speed: 600,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<div class="box ' + className + '"><div class="case "></div></div>'
+      },
+    },
+  })
+  // bannerSwiper .el.onmouseover = function(){ //鼠标放上暂停轮播
+  // bannerSwiper .autoplay.stop();
+  // }
+  // bannerSwiper .el.onmouseleave = function(){
+  //  bannerSwiper .autoplay.start();
+  //}
+  var mySwiper = new Swiper('.apply-swiper-list', {
+    autoplay: true,
+    speed: 1000,
+    pagination: {
+      el: '.apply-swiper .swiper-pagination',
+      clickable: true,
+    }
+  })
+  var mySwiper = new Swiper('.swiperList', {
+    autoplay: true,
+    autoplayDisableOnInteraction: false,
+    loop: true,
+    centeredSlides: true,
+    slidesPerView: 2.2,
+    spaceBetween: -80,
+    //滑动速度
+    speed: 1000,
+    on: {
+      click: function () {
+        console.log(123)
+        if (this.activeIndex < this.clickedIndex) {
+          this.slideNext()
+        } else {
+          this.slidePrev()
+        }
+      }
+    },
+
+  })
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 400) {
+      DynamicNumber.show('count1', 85)
+      DynamicNumber.show('count2', 70)
+      DynamicNumber.show('count3', 300)
+      DynamicNumber.show('count4', 0)
+    }
+    if ($(window).scrollTop() > 1200) {
+      for (let i = 0; i < 5; i++) {
+        (function (j) {
+          let time = i * 300
+          setTimeout(function () {
+            $($('.tab-item')[j]).removeClass('hidden')
+            $($('.tab-item')[j]).addClass('sport')
+          }, time)
+        })(i)
+      }
+    }
+  })
+
+  function toPath(path) {
+    window.location.href = 'http://rpa.suning.com/cms' + path + '.htm'
+  }
+
+  if (window.location.href.indexOf('index') > -1) {
+    $('.menu-index').addClass('menu-active')
+    $('.menu-example').removeClass('menu-active')
+  } else {
+    $('.menu-example').addClass('menu-active')
+    $('.menu-index').removeClass('menu-active')
+  }
+
+  function toRpa(path) {
+    window.location.href = path
+  }
+
+  $('.menu-item-cmpt').click(function () {
+    window.location.href = 'http://rpacmpt.cnsuning.com/#/mainPage'
+  })
+  $('.loginBtn').click(function () {
+    window.open('http://snrobot.cnsuning.com/')
+  })
+  $('.drill').click(function () {
+    window.open('http://snrobot-drill.suning.com')
+  })
+  $('.toCicada').click(function () {
+    window.location.href = 'http://rpa.suning.com/cms/cicada.htm'
+  })
+
+  $('.menu-item-cmpt').mouseover(function () {
+    $('.menu-cmpt-list').addClass('block')
+  })
+  $('.menu-cmpt-list').mouseleave(function () {
+    $('.menu-cmpt-list').removeClass('block')
+  })
+  $('.menu-item-cmpt').mouseover(function () {
+    $('.menu-cmpt-list').addClass('block')
+  })
+  $('.menu-cmpt-list').mouseleave(function () {
+    $('.menu-cmpt-list').removeClass('block')
+  })
+
+  $('.tianmao-dialog-btn').click(function () {
+    var val = $('#tianmao-input').val()
+    if (val.length != 8) {
+      $('#tianmao-input-err').addClass('block')
+      return
+    }
+    if (val[0] != 0 || val[0] != 1 || val[0] != 2 || val[0] != 9) {
+      if (val[0] == 2) {
+        if (val[1] > 2) {
+          $('#tianmao-input-err').addClass('block')
+          return
+        }
+      }
+      if (val[0] == 9) {
+        if (val[1] < 2) {
+          $('#tianmao-input-err').addClass('block')
+          return
+        }
+      }
+    } else {
+      $('.tianmao-input-err').addClass('block')
+      return
+    }
+    window.location.href = 'http://oss.suning.com/snrobot/cmpt_file/zSmMcVJXu0urslCrTEOv1SaeoWC8TLFNxD55rSXRaoCwd9z8iFGg5e2PsL-tTG91.zip'
+    let data = {
+      appName: '天猫数据抓取',
+      downloadUser: $('#tianmao-input').val()
+    }
+    $.ajax({
+      beforeSend: function (XMLHttpRequest) {
+        XMLHttpRequest.setRequestHeader('snrobot-authId', 'DOWMLOAD_TIMES')
+      },
+      headers: {
+        'Content-Type': 'application/json;charset=utf8',
+        'snrobot-authId': 'DOWMLOAD_TIMES'
+      },
+      url: 'http://snrobotop.cnsuning.com/website/addClientDownloadDetail.htm',
+      data: JSON.stringify(data),
+      type: 'POST',
+      success: function () {
+        $('.tianmao-dialog').removeClass('block')
+      }
+    })
+
+  })
+
+  $('.shwoTm').click(function () {
+    $('.tianmao-dialog').addClass('block')
+  })
+  $('.closeDialog').click(function () {
+    $('.tianmao-dialog').removeClass('block')
+  })
+
+  $('.menu-item-tm').mouseover(function () {
+    $('.menu-tm-list').addClass('block')
+  })
+  $('.menu-item-tm').mouseleave(function () {
+    $('.menu-tm-list').removeClass('block')
+  })
+  $('#tianmao-input').focus(function () {
+    $('#tianmao-input-err').removeClass('block')
+
+  })
+  $('#tianmao-input').blur(function () {
+    var val = $('#tianmao-input').val()
+    if (val.length != 8) {
+      $('#tianmao-input-err').addClass('block')
+      return
+    }
+    if (val[0] != 0 || val[0] != 1 || val[0] != 2 || val[0] != 9) {
+      if (val[0] == 2) {
+        if (val[1] > 2) {
+          $('#tianmao-input-err').addClass('block')
+          return
+        }
+      }
+      if (val[0] == 9) {
+        if (val[1] < 2) {
+          $('#tianmao-input-err').addClass('block')
+          return
+        }
+      }
+
+      return
+    } else {
+      $('.tianmao-input-err').addClass('block')
+    }
+  })
+
+  $('.to-cmpt-base').click(function () {
+    window.location.href = 'http://rpacmpt.cnsuning.com/#/mainPage'
+    return false
+  })
+
+  $('.to-cmpt-bus').click(function () {
+    window.location.href = 'http://rpacmpt.cnsuning.com/#/businessList?id=2&type=yewu'
+    return false
+  })
+
+</script>
+</body>
+
+</html>

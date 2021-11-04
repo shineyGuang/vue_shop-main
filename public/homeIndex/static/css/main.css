@@ -1,0 +1,111 @@
+html,body,div,ul,ol,li,p,span {
+    margin:0;
+    padding:0;
+}
+body {
+    font-family: "Microsoft YaHei"; 
+     /* font-family: "PingFang SC", "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "Hiragino Sans GB", "Source Han Sans CN Normal", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif; */
+    min-width: 1300px;
+}
+a {
+    color: #666;
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.w1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+* {
+    outline: none;
+}
+.loginBtn {
+    height: 32px;
+    float: right;
+    padding: 0 16px;
+    background: #3f91f5;
+    border-radius: 19.5px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin-top: 18px;
+    margin-left: 20px;
+    line-height: 32px;
+    cursor: pointer;
+  }
+ /*footer*/
+  .footer {
+    background: #3C3D40;
+    // height: 140px;   
+    max-width: 1920px;
+    color: #ACACAC;
+    margin: 0 auto;
+    font-size:16px;
+  }
+  .foot-top {
+    height: 70px;
+    // display: table;
+    text-align: center;
+    width: 100%;
+    line-height: 100px;
+  }
+  .foot-top .fx {
+    // width:360px;
+    // margin: 26px auto;
+  }
+  .foot-top .foot-top-1 {
+    width: 100px;
+}
+  .foot-top .foot-top-1:not(:last-child) {
+    border-right: 1px solid #acacac;
+  }
+  .foot-bot {
+    height: 70px;
+    line-height: 50px;
+    // border-top: 1px solid #2F2F2F;
+    text-align: center;
+    
+  }
+  .telphone {
+    margin:  0 20px;
+  }
+  .telphone img,.email img {
+    vertical-align: middle;
+  }
+  .email {
+    margin:  0 20px;
+  }
+
+.end::after {
+    content: "";
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background: #f7b500;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    margin-left: -14px;
+    margin-top: -8px;
+}
+.delay03 {
+    animation-delay:0.3s;
+}
+.delay06 {
+    animation-delay:0.6s;
+}
+.delay09 {
+    animation-delay:0.9s;
+}
+.delay12 {
+    animation-delay:1.2s;
+}
+.delay15 {
+    animation-delay:1.5s;
+}

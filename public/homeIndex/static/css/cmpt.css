@@ -1,0 +1,113 @@
+ .type-select {
+  padding-top: 30px;
+}
+.type-select .el-select {
+  width: 120px;
+  font-size: 15px;
+}
+.type-select .el-input__suffix {
+  right: -15px;
+}
+.type-select .el-input__suffix .el-input__inner {
+  padding-right: 20px;
+}
+.type-select .el-select > .el-input {
+  border-radius: 4px;
+}
+.type-select .el-input__inner {
+  color: #fff;
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  width: 139px;
+}
+
+        .expression-content {
+  margin-top: 51px;
+}
+.expression-content .item {
+  height: 120px;
+  float: left;
+  padding-left: 80px;
+  width: 520px;
+  margin-bottom: 49px;
+}
+.expression-content .item .item-img-box {
+  float: left;
+  height: 120px;
+  margin-top: 25px;
+  position: relative;
+}
+.expression-content .item .item-img-box .left-icon {
+  height: 70px;
+  width: 70px;
+}
+.expression-content .item .item-img-box .setting {
+  position: absolute;
+  right: -30px;
+  top: -25px;
+}
+.expression-content .item .item-text-box {
+  margin-left: 42px;
+  float: left;
+  margin-top: 25px;
+  width: 400px;
+}
+.expression-content .item .item-text-box .item-title {
+  line-height: 44px;
+  font-size: 24px;
+  color: #333333;
+}
+.expression-content .item .item-text-box .item-desc {
+  font-size: 16px;
+  color: #666666;
+}
+
+.my-swiper {
+  position: relative;
+}
+.my-swiper .swiper-container {
+  width: 1080px;
+  margin: 60px auto 0;
+}
+.my-swiper .swiper-button-prev,
+.my-swiper .swiper-container-rtl .swiper-button-next {
+  left: 0;
+}
+.my-swiper .swiper-button-prev {
+  content: '';
+  height: 60px;
+  width: 22px;
+  background: url('../img/example/left.png') no-repeat;
+  background-size: 22px 60px;
+}
+.my-swiper .swiper-button-next {
+  content: '';
+  height: 60px;
+  width: 22px;
+  background: url('../img/example/right.png') no-repeat;
+  background-size: 22px 60px;
+}
+.my-swiper .swiper-button-next,
+.my-swiper .swiper-container-rtl .swiper-button-prev {
+  right: 0;
+}
+.my-swiper .swiper-item {
+  height: 480px;
+  width: 360px !important;
+  position: relative;
+}
+.my-swiper .swiper-item .swiper-img {
+  width: 342px;
+  height: 400px;
+}
+.my-swiper .swiper-item .swiper-desc {
+  height: 80px;
+  width: 342px;
+  text-align: center;
+  line-height: 80px;
+  font-size: 24px;
+  color: #333333;
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+}

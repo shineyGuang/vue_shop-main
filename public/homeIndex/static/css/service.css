@@ -1,0 +1,106 @@
+.banner {
+  width: 100%;
+  height: 400px;
+  background: url("../img/service/banner.png") no-repeat center;
+  overflow: hidden;
+}
+.banner .banner-title {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 70px;
+}
+.banner .banner-title-bottom {
+  font-weight: 100;
+  color: #F7B500;
+}
+.banner .banner-desc {
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 34px;
+  margin-top: 25px;
+}
+.detail-content .current {
+  width: 100%;
+  height: 664px;
+  background: url('../img/personnel/dottle.png') no-repeat;
+  background-position: 0 250px;
+  padding-top: 88px;
+}
+.detail-content .current .current-content {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+.detail-content .current .current-content .current-item {
+  padding: 51px 45px 0;
+  height: 386px;
+  width: 330px;
+  border: 1px solid #E6E6E6;
+  background: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  transition: all .4s;
+}
+.detail-content .current .current-content .current-item .current-title {
+  font-size: 24px;
+  color: #3F91F5;
+  letter-spacing: 0;
+  margin-top: 39px;
+}
+.detail-content .current .current-content .current-item .current-desc {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 24px;
+  text-align: left;
+}
+.detail-content .current .current-content .current-item:hover {
+  transform: scale(1.2);
+}
+.detail-content .apply {
+  width: 100%;
+  height: 720px;
+  padding-top: 60px;
+  background: url('../img/service/applyBg.png') no-repeat;
+  background-size: cover;
+}
+.detail-content .apply .my-swiper-personnel {
+  position: relative;
+}
+.detail-content .expression {
+  width: 100%;
+  height: 530px;
+  padding-top: 80px;
+}
+.detail-content .w1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.detail-content .w1200 .title {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  letter-spacing: 0;
+  line-height: 50px;
+  font-weight: 100;
+}
+.detail-content .w1200 .title .bold {
+  font-weight: 600;
+  color: #333333;
+}
+.detail-content .w1200 .desc {
+  text-align: center;
+  opacity: 0.4;
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-top: 10px;
+  color: #333333;
+}
+.detail-content .w1200 .line {
+  width: 80px;
+  border: 3px solid #3F91F5;
+  border-radius: 5px;
+  margin: 20px auto 0;
+}

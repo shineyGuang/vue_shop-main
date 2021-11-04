@@ -1,0 +1,186 @@
+.banner {
+  width: 100%;
+  height: 400px;
+  background: url("../img/banking/banner.png") no-repeat center;
+  overflow: hidden;
+}
+.banner .banner-title {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 70px;
+}
+.banner .banner-title-bottom {
+  font-weight: 100;
+  color: #f7b500;
+}
+.banner .banner-desc {
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 34px;
+  margin-top: 25px;
+}
+.detail-content .current {
+  width: 100%;
+  height: 711px;
+  padding-top: 81px;
+}
+.detail-content .current .current-content {
+  width: 1200px;
+  margin: 0 auto;
+  height: 661px;
+  margin-top: 86px;
+  display: flex;
+  justify-content: space-between;
+}
+.detail-content .current .current-content .card {
+  height: 517px;
+  width: 345px;
+  border: 1px solid #e6e6e6;
+  border-radius: 11px;
+  padding: 66px 54px 0;
+  box-sizing: border-box;
+  transform: skewY(-10deg) !important;
+  cursor: pointer;
+}
+.detail-content .current .current-content .card .card-box {
+  transform: skewY(10deg);
+}
+.detail-content .current .current-content .card .number {
+  opacity: 0.8;
+  font-family: Impact;
+  font-size: 120px;
+  color: #eeeeee;
+  text-align: center;
+}
+.detail-content .current .current-content .card .card-title {
+  font-size: 32px;
+  color: #333333;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 5px;
+}
+.detail-content .current .current-content .card .card-title-eng {
+  font-size: 14px;
+  color: #cccccc;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 5px;
+}
+.detail-content .current .current-content .card .line {
+  width: 40px;
+  height: 0;
+  border: 2px solid #BBBBBB;
+  margin: 15px auto 0;
+  border-radius: 3px;
+}
+.detail-content .current .current-content .card .card-desc {
+  margin-top: 32px;
+  font-size: 16px;
+  color: #666666;
+}
+.detail-content .current .current-content .card:hover {
+  box-shadow: 0 0 44px -6px #FFC583;
+  background: #FF9822;
+}
+.detail-content .current .current-content .card1:hover .number {
+  color: #FECD05;
+}
+.detail-content .current .current-content .card1:hover .card-title {
+  color: #fff;
+}
+.detail-content .current .current-content .card1:hover .card-title-eng {
+  opacity: 0.6;
+  color: #fff;
+}
+.detail-content .current .current-content .card1:hover .card-desc {
+  color: #fff;
+}
+.detail-content .current .current-content .card1:hover .line {
+  border: 2px solid #fff;
+}
+.detail-content .current .current-content .card2:hover .number {
+  color: #FECD05;
+}
+.detail-content .current .current-content .card2:hover .card-title {
+  color: #fff;
+}
+.detail-content .current .current-content .card2:hover .card-title-eng {
+  opacity: 0.6;
+  color: #fff;
+}
+.detail-content .current .current-content .card2:hover .card-desc {
+  color: #fff;
+}
+.detail-content .current .current-content .card2:hover .line {
+  border: 2px solid #fff;
+}
+.detail-content .current .current-content .card3:hover .number {
+  color: #FECD05;
+}
+.detail-content .current .current-content .card3:hover .card-title {
+  color: #fff;
+}
+.detail-content .current .current-content .card3:hover .card-title-eng {
+  opacity: 0.6;
+  color: #fff;
+}
+.detail-content .current .current-content .card3:hover .card-desc {
+  color: #fff;
+}
+.detail-content .current .current-content .card3:hover .line {
+  border: 2px solid #fff;
+}
+.detail-content .apply {
+  width: 100%;
+  height: 650px;
+  padding-top: 60px;
+  background: url("../img/banking/applyBg.png") no-repeat;
+  background-size: cover;
+}
+.detail-content .apply .my-swiper-personnel {
+  position: relative;
+}
+.detail-content .expression {
+  width: 100%;
+  height: 510px;
+  padding-top: 80px;
+  background: #fff;
+}
+.detail-content .w1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.detail-content .w1200 .title {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  letter-spacing: 0;
+  line-height: 50px;
+  font-weight: 100;
+}
+.detail-content .w1200 .title .bold {
+  font-weight: 600;
+  color: #ff9822;
+}
+.detail-content .w1200 .title:after {
+  content: " ";
+  height: 40px;
+  width: 50px;
+  background: url("../img/banking/slide.png") no-repeat;
+  display: inline-block;
+  position: relative;
+  left: 20px;
+  top: 4px;
+}
+.detail-content .w1200 .title:before {
+  content: " ";
+  height: 40px;
+  width: 50px;
+  background: url("../img/banking/slide.png") no-repeat;
+  display: inline-block;
+  position: relative;
+  left: 5px;
+  top: 4px;
+}

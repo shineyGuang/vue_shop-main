@@ -1,0 +1,615 @@
+/*公用快开始*/
+.main {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 1200px;
+}
+.item-sub {
+  padding-top: 48px;
+  color: #333;
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  line-height: 56px;
+  letter-spacing: 2px;
+}
+.subject-item {
+  width: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+.ysyf-item4 {
+  height: 860px;
+  background-image: url("../img/cicada/banner2.png");
+}
+.ysyf-item4 .item-sub {
+font-weight: 100;
+  color: #fff;
+}
+.ysyf-item4 .main {
+  position: relative;
+  margin-top: 102px;
+}
+.ysyf-item4 .integrated-nav {
+  position: absolute;
+  left: 0;
+  top: -54px;
+  width: 280px;
+}
+.ysyf-item4 .integrated-nav li {
+  padding: 4px 14px;
+  box-sizing: border-box;
+}
+.ysyf-item4 .integrated-nav li h4 {
+  //height: 34px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  //line-height: 34px;
+  color: #fff;
+}
+.ysyf-item4 .integrated-nav li h4 img {
+  margin-right:12px;
+}
+.ysyf-item4 .integrated-nav li p {
+  height: 78px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.ysyf-item4 .integrated-nav li.sub {
+  padding: 0 0 0 32px;
+  font-size: 18px;
+  line-height: 44px;
+  color: #fff;
+}
+.subject-integrated {
+  position: absolute;
+  left: 534px;
+  top: -20px;
+  display: block;
+  width: 534px;
+  height: 534px;
+}
+.subject-integrated .cassA-box {
+  position: absolute;
+  left: 184px;
+  top: 187px;
+  z-index: 2;
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.subject-integrated .cassA-box img {
+  display: block;
+  margin: 16px auto 0;
+  transition: all .6s ease-out;
+  animation: updown 3s linear infinite;
+}
+
+.subject-integrated:hover .cassA-box img {
+  margin-top: -165px;
+}
+.subject-integrated .cassA-box .cassA-txt {
+  display: block;
+    width: 100%;
+    height: 100%;
+    padding-top: 72px;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+}
+.subject-integrated .cassA-rotate1 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 484px;
+  height: 484px;
+  margin: -241px 0 0 -241px;
+  background: url('../img/cicada/rotate-1.png') no-repeat 0 0;
+}
+@keyframes updown {
+    0% {
+
+        -webkit-transform: translate3d(0,-7%,0);
+        transform: translate3d(0,-7%,0);
+    }
+    50%{
+        -webkit-transform: translate3d(0,10%,0);
+        transform: translate3d(0,7%,0);
+    }
+    100% {
+        -webkit-transform: translate3d(0,-10%,0);
+        transform: translate3d(0,-7%,0);
+    }
+}
+
+.updown {
+    -webkit-animation-name: updown;
+    animation-name: updown
+}
+.subject-integrated.active .cassA-rotate1 {
+  animation: rotateForEver 8s linear infinite;
+}
+.tec-ul .tec-li {
+  position: absolute;
+  width: 0;
+  height: 28px;
+  overflow: hidden;
+  line-height: 28px;
+  font-size: 14px;
+  color: #C9DCF9;;
+  text-align: center;
+  white-space: nowrap;
+  background: url("../img/cicada/tagbg.png");
+  -webkit-transition: all .6s ease-out;
+  transition: all .6s ease-out;
+}
+.tec-ul .tec-li.active {
+  width: 100px;
+}
+.tec-ul2 .tec-li {
+  position: absolute;
+  width: 70px;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #859dcd;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all .6s ease-out;
+  transition: all .6s ease-out;
+}
+.tec-ul2 .tec-li.active {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+/*动画*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+.animated.hinge1 {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+}
+.animated.hinge0 {
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+.animated.delay {
+  transition-delay: 2s;/* Opera */
+}
+.animated.delay1 {
+  transition-delay: 1s;/* Opera */
+}
+.animated.delay0 {
+  -webkit-transition-delay: .5s;
+  transition-delay: .5s;/* Opera */
+}
+/* 左侧文字飞入 */
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%,0,0);
+        transform: translate3d(-100%,0,0)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+.fadeInRight {
+    -webkit-animation-name: fadeInRight ;
+    animation-name: fadeInRight 
+}
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+/* 转圈动画 */
+.widthauto {
+  animation-name: widthauto;
+}
+@-webkit-keyframes rotateForEver {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+.cicada-box {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+.banner {
+  //height: 690px;
+  max-width: 1920px;
+  //background: url('../img/cicada/banner.png') no-repeat;
+  overflow: hidden;
+ position: relative;
+}
+.banner img {
+width:auto
+}
+ .myVideDialog {
+background: rgba(0, 0, 0, 0.5);
+}
+ .myVideDialog .el-dialog {
+  width:65% !important;
+}
+.myVideDialog .el-dialog__body{
+    padding:0;
+}
+.close-video {
+    display:none;
+}
+.myVideDialog:hover .close-video {
+    display:block;
+}
+body:not('.myVideDialog'):hover .close-video {
+    display:none;
+}
+.myVideDialog .el-dialog__header {
+ display:none;
+}
+.openVideo {
+    height:102px;
+    width:102px;
+    cursor:pointer;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left: -51px;
+    margin-top: -51px;
+    background:url('../img/cicada/video-play.png') no-repeat;
+    background-size:102px;
+}
+.openVideo:hover {
+    background:url('../img/cicada/video-play2.png') no-repeat;
+    background-size:102px;
+}
+.banner .version-box {
+  width: 100%;
+        text-align: center;
+        position: relative;
+        top: 80px;
+        height: 500px;
+        overflow: hidden;
+}
+.banner-swiper .swiper-pagination-bullet {
+    height: 15px;
+    width: 15px;
+    background:#fff;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+margin:-8px 4px
+}
+.banner .version-box .title {
+  width: 100%;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 63px;
+            color: #FFFFFF;
+            z-index: 99;
+            position: absolute;
+            bottom: 70px;
+            height:63px;
+line-height:43px;
+}
+.banner .desc {
+  opacity: 0.8;
+        font-size: 20px;
+        color: #FFFFFF;
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+}
+.banner .version-code {
+  color:#f7e000;
+}
+.banner .download {
+  width: 168px;
+        height: 52px;
+        line-height: 52px;
+        background-image: linear-gradient(223deg, #8856FF 0%, #2D5EE6 100%);
+        border-radius: 4px;
+        text-align: center;
+        font-size: 24px;
+        color: #FFFFFF;
+        cursor: pointer;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    margin-left: -84px;
+}
+.business {
+  height: 670px;
+  padding-top: 68px;
+  box-sizing: border-box;
+  position:relative;
+  background: url('../img/cicada/business-left.png');
+    background-size: 30%;
+    background-position: left bottom;
+  //background: url('../img/cicada/business-left.png'), url('../img/cicada/business-right.png');
+  //background-position: left bottom, right top;
+  background-repeat: no-repeat;
+  //background-size: 25% 42%,40%;
+}
+.business .title {
+  font-size: 36px;
+  color: #333333;
+  text-align: center;
+}
+.business .topic {
+  line-height:40px;
+  font-size: 28px;
+  color: #333333;
+  margin-top: 185px;
+}
+.business .start {
+  background: #0073FF;
+  border-radius: 4px;
+  width: 120px;
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-top: 50px;
+  cursor: pointer;
+}
+.business .img-box {
+  width: 697px;
+  height: 520px;
+  overflow: hidden;
+}
+.bold {
+  font-weight: bold;
+}
+.fx {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto ;
+}
+.mt60 {
+  margin-top:60px
+}
+.process {
+  display: inline-block;
+  font-size: 14px;
+  color: #0073FF;
+  border: 1px solid #d1e6ff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #f5fdff;
+}
+.btns {
+  margin-top: 48px;
+}
+.btns2 {
+  margin-top: 40px;
+}
+.btns .btn-item {
+  border-radius: 2px;
+  width: 92px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btns .prev-btn {
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+  color: #999999;
+}
+.btns .next-btn {
+  background: #0073FF;
+  color: #fff;
+  margin-left: 16px;
+}
+.btns .test-again {
+  width: 120px;
+}
+.btns .download {
+  width: 120px;
+}
+.applycation {
+  height: 810px;
+  padding-top: 50px;
+  box-sizing: border-box;
+  max-width: 1920px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+.applycation .title {
+  font-size: 36px;
+  color: #333333;
+  height:36px;
+}
+.applycation .desc {
+  font-size: 16px;
+  height:16px;
+  color: #666666;
+  margin-top: 16px;
+}
+.tx-c {
+  text-align: center;
+}
+.cicada-dialog .ret-message {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #333333;
+}
+.cicada-dialog .ret-img {
+  width: 108px;
+  height: 106px;
+}
+.radio-options .el-radio {
+		margin-top: 27px;
+		margin-right: 60px;
+	}
+	
+	.radio-options .el-radio__label {
+		color: #333;
+	}
+.cicada-dialog .el-dialog {
+		width: 480px;
+		border-radius: 6px;
+    }
+	
+    .cicada-dialog .el-dialog__header {
+        border-bottom: 1px solid #f0f0f0;
+    }
+.my-swiper {
+    max-width: 1790px;
+    margin: 0 auto;
+}
+ .wrapper {
+  width: 358px;
+  height: 541px;
+  cursor: pointer;
+  position: relative;
+  perspective: 500;
+  -webkit-perspective: 500;
+  overflow:hidden;
+}
+
+ .wrapper .front,
+ .wrapper .back {
+  width: 358px;
+  height: 541px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  perspective: 1000;
+  backface-visibility: hidden;
+  transition: all 1s;
+  overflow: hidden;
+}
+.my-swiper .swiper-container {
+    width: 100%;
+}
+ .wrapper .front img,
+.wrapper .back img {
+  height: 100%;
+}
+ .wrapper .back {
+  position: relative;
+  //transform: rotateY(-180deg);
+transform:translateX(358px);
+  background: #3F91F5;
+  text-align: left;
+  padding: 100px 42px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+}
+.my-swiper .swiper-item {
+    width: 358px !important;
+  height: 541px !important;
+}
+ .wrapper .back .back-title {
+  line-height:28px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+ .wrapper .back .back-line {
+  margin-top:20px;
+  width:30px;
+  border-bottom: 2px solid rgba(216,216,216,0.6);
+}
+ .wrapper .back .back-desc {
+  margin-top:27px;
+  font-size:16px;
+  line-height: 24px;
+}
+ .wrapper:hover .front {
+  //transform: rotateY(-180deg);
+transform:translateX(358px);
+}
+ .wrapper:hover .back {
+  //transform: rotateY(-360deg);
+transform:translateX(0);
+}
+
+.delay02 {
+ animation-delay: 0.2s;
+}
+.delay04 {
+ animation-delay: 0.4s;
+}
+.delay05 {
+ animation-delay: 0.5s;
+}
+.delay06 {
+ animation-delay: 0.6s;
+}
+.delay08 {
+ animation-delay: 0.8s;
+}
+.delay1 {
+ animation-delay: 1s;
+}
+.delay15 {
+ animation-delay: 1.5s;
+}
+.delay2 {
+ animation-delay: 2s;
+}
+thin {
+ font-weight:100
+}
+.topic-test {
+  height:200px
+}

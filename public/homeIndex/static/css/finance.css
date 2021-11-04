@@ -1,0 +1,139 @@
+.banner {
+  width: 100%;
+  height: 400px;
+  background: url("../img/finance/banner.png") no-repeat center;
+  overflow: hidden;
+}
+.banner .banner-title {
+  font-size: 48px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 70px;
+}
+.banner .banner-title-bottom {
+  font-weight: 100;
+  color: #F7B500;
+}
+.banner .banner-desc {
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  line-height: 34px;
+  margin-top: 25px;
+}
+.detail-content .current {
+  width: 100%;
+  height: 711px;
+  background: url('../img/finance/grid.png') no-repeat;
+  padding-top: 81px;
+}
+.detail-content .current .current-content {
+  width: 800px;
+  margin: 0 auto;
+  height: 661px;
+  position: relative;
+  background: url('../img/finance/current.png') no-repeat center bottom;
+}
+.detail-content .current .current-content .current-img {
+  position: absolute;
+  left: 420px;
+  top: 80px;
+}
+.detail-content .current .current-content .current-box {
+  height: 87px;
+  width: 304px;
+  border-radius: 8px;
+  position: absolute;
+  padding: 26px 33px;
+}
+.detail-content .current .current-content .time-long {
+  background: #FFFCE6;
+  top: 80px;
+  left: -100px;
+  animation: myfirst 4s infinite;
+}
+@keyframes myfirst {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -20px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+.detail-content .current .current-content .time-high {
+  top: 435px;
+  left: -185px;
+  background: #F1FFF2;
+  animation: myfirst 4s infinite;
+}
+.detail-content .current .current-content .auto-low {
+  top: 235px;
+  right: -200px;
+  background: #E6FCFF;
+  animation: myfirst 4s infinite;
+}
+.detail-content .current .current-content .box-title {
+  font-size: 24px;
+  color: #333333;
+  font-weight: 400;
+}
+.detail-content .current .current-content .box-desc {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 8px;
+}
+.detail-content .apply {
+  width: 100%;
+  height: 650px;
+  padding-top: 60px;
+  background: url('../img/finance/applyBg.png') no-repeat;
+  background-size: cover;
+}
+.detail-content .apply .my-swiper-personnel {
+  position: relative;
+}
+.detail-content .expression {
+  width: 100%;
+  height: 509px;
+  padding-top: 80px;
+  background: #fff;
+}
+.detail-content .w1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+.detail-content .w1200 .title {
+  text-align: center;
+  font-size: 36px;
+  color: #333333;
+  letter-spacing: 0;
+  line-height: 50px;
+  font-weight: 100;
+}
+.detail-content .w1200 .title .bold {
+  font-weight: 600;
+  color: #635EF2;
+}
+.detail-content .w1200 .title:after {
+  content: " ";
+  height: 30px;
+  width: 50px;
+  background: url('../img/finance/slide1.png') no-repeat;
+  display: inline-block;
+  position: relative;
+  left: 20px;
+  top: 4px;
+}
+.detail-content .w1200 .title:before {
+  content: " ";
+  height: 30px;
+  width: 50px;
+  background: url('../img/finance/slide2.png') no-repeat;
+  display: inline-block;
+  position: relative;
+  left: -20px;
+  top: 4px;
+}
